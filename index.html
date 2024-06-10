@@ -331,12 +331,12 @@ src: url("./fonts/Avenir_Book.ttf");
     <p>
     In lifelong RL, a learning agent must continually acquire new knowledge to handle the nonstationarity of the environment. At first glance, there appears to be an obvious solution: given a policy gradient oracle, the agent could just keep running gradient descent nonstop. However, recent experiments have demonstrated an intriguing behavior called&nbsp;<strong>loss of plasticity [1,2,3,4]</strong>: despite persistent gradient steps, such an agent can gradually lose its responsiveness to incoming observations.</p>
 	<br />
-	<p>
-		<center>
-		  <img class="rounded" src="./assets/rewards_animation.gif" width="500px">
-		</center>
-	</p>
+	<div style="text-align: center;">
+		<img class="rounded" src="./assets/starpilot_rewards_animation.gif" style="width: 350px; display: inline-block;">
+		<img class="rounded" src="./assets/control_rewards_animation.gif" style="width: 265px; display: inline-block;">
+	</div>
 	<br />
+
 
 <p>
         To reduce this divergence, we propose an <b>affine re-parameterization</b> of the code-vectors that can better match the moments of the embedding representation. An affine re-parameterization with shared parameters ensures that the code-vectors
