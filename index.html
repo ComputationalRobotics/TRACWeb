@@ -24,6 +24,7 @@ src: url("./fonts/Avenir_Book.ttf");
             margin-right: auto;
             width: 1200px;
         }
+		
 		#headerLogo {
 			position: absolute;
 			top: 10px; /* Adjust this value to position the logo from the top */
@@ -31,7 +32,7 @@ src: url("./fonts/Avenir_Book.ttf");
 			height: 50px; /* Set this according to your logo's size */
 		}
 		* {
-        max-width: 800px;
+        max-width: 900px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -72,7 +73,15 @@ src: url("./fonts/Avenir_Book.ttf");
         pre.prettyprint>code {
             border: none;
         }
-        
+        .header {
+			width: 100%; /* Takes the full width of its parent, up to 800px */
+			text-align: right; /* Aligns the content (logo) to the right */
+			padding: 10px 0; /* Adds some vertical padding for spacing */
+		}
+
+		.header-logo {
+			height: 50px; /* Adjust based on your logo's size */
+		}
         .disclaimerbox {
             background-color: #eee;
             border: 1px solid #eeeeee;
@@ -191,7 +200,9 @@ src: url("./fonts/Avenir_Book.ttf");
 </head>
 
 <body>
-	<img src="assets/seas_logo.png" id="headerLogo" alt="Logo">
+	 <div class="header">
+        <img src="assets/seas_logo.png" alt="Logo" class="header-logo">
+    </div>
     <br>
 	<center>
 		<span style="font-size:32px"><strong>Fast </strong>
