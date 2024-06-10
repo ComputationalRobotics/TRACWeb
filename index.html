@@ -24,6 +24,12 @@ src: url("./fonts/Avenir_Book.ttf");
             margin-right: auto;
             width: 1200px;
         }
+		#headerLogo {
+			position: absolute;
+			top: 10px; /* Adjust this value to position the logo from the top */
+			right: 10px; /* Adjust based on your layout's needs */
+			height: 50px; /* Set this according to your logo's size */
+		}
 		* {
         max-width: 800px;
         margin-left: auto;
@@ -32,6 +38,7 @@ src: url("./fonts/Avenir_Book.ttf");
         
         h1 {
             font-weight: 300;
+			font-size: 24;
         }
         
         h2 {
@@ -184,6 +191,7 @@ src: url("./fonts/Avenir_Book.ttf");
 </head>
 
 <body>
+	<img src="assets/seas_logo.png" id="headerLogo" alt="Logo">
     <br>
 	<center>
 		<span style="font-size:32px"><strong>Fast </strong>
